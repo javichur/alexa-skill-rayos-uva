@@ -1,0 +1,535 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "<NOMBRE DE INVOCACIÓN DE TU SKILL AQUÍ>",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "qué es esto",
+                        "ayudar",
+                        "no entiendo",
+                        "help me",
+                        "help",
+                        "ayúdame",
+                        "ayuda"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "parar",
+                        "cierra",
+                        "apaga",
+                        "terminar",
+                        "stop",
+                        "para",
+                        "salir"
+                    ]
+                },
+                {
+                    "name": "ConsultarRadiacionIntent",
+                    "slots": [
+                        {
+                            "name": "ciudadSlot",
+                            "type": "ciudadSlot",
+                            "samples": [
+                                "La ciudad es {ciudadSlot}",
+                                "La ciudad se llama {ciudadSlot}",
+                                "En el municipio {ciudadSlot}",
+                                "En la ciudad de {ciudadSlot}",
+                                "En {ciudadSlot}",
+                                "{ciudadSlot}"
+                            ]
+                        },
+                        {
+                            "name": "cuandoSlot",
+                            "type": "cuandoSlot",
+                            "samples": [
+                                "{cuandoSlot}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Rayos uva de {ciudadSlot} {cuandoSlot}",
+                        "Rayos uva en {ciudadSlot} {cuandoSlot}",
+                        "Dime rayos uva en {ciudadSlot} {cuandoSlot}",
+                        "Qué radiación hará {cuandoSlot} en {ciudadSlot}",
+                        "Dime la radiación en {ciudadSlot} {cuandoSlot}",
+                        "Qué nivel hará en {ciudadSlot} {cuandoSlot} ",
+                        "Qué radiación hace en {ciudadSlot} {cuandoSlot}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "ciudadSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Alicante",
+                                "synonyms": [
+                                    "Alacant"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Albacete"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Almería"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arrecife"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ávila"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Badajoz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Barcelona",
+                                "synonyms": [
+                                    "Barselona",
+                                    "Barna"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bilbao"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Burgos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cáceres"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cádiz",
+                                "synonyms": [
+                                    "Cadi"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Castellón de la Plana",
+                                "synonyms": [
+                                    "Castelló de la Plana"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ceuta",
+                                "synonyms": [
+                                    "Seuta"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ciudad Real"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Córdoba"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coruña",
+                                "synonyms": [
+                                    "A Coruña"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cuenca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Donostia-San Sebastián",
+                                "synonyms": [
+                                    "Donostia",
+                                    "San Sebastián",
+                                    "Donosti"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eivissa",
+                                "synonyms": [
+                                    "Ibiza"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Girona",
+                                "synonyms": [
+                                    "Gerona"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Granada",
+                                "synonyms": [
+                                    "Graná"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Guadalajara"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Huelva",
+                                "synonyms": [
+                                    "Huerva"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Huesca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jaén"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "León"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lleida",
+                                "synonyms": [
+                                    "Lérida"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Logroño"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lugo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Madrid",
+                                "synonyms": [
+                                    "Madriz"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Málaga"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maó",
+                                "synonyms": [
+                                    "Mahón",
+                                    "Maón"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Melilla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Murcia",
+                                "synonyms": [
+                                    "Murcie"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ourense",
+                                "synonyms": [
+                                    "Orense"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oviedo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Palencia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Palma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Palmas de Gran Canaria",
+                                "synonyms": [
+                                    "Las Palmas de Gran Canaria",
+                                    "Las Palmas"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pamplona",
+                                "synonyms": [
+                                    "Iruña"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pontevedra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Puerto del Rosario"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Salamanca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "San Sebastián de la Gomera"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Santa Cruz de la Palma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Santa Cruz de Tenerife"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Santander"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Segovia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sevilla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Soria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tarragona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Teruel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Toledo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Valencia",
+                                "synonyms": [
+                                    "donde la paella"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Valladolid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Valverde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vitoria-Gasteiz",
+                                "synonyms": [
+                                    "Vitoria"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zamora"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zaragoza",
+                                "synonyms": [
+                                    "Zaragozá"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cuandoSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dentro de tres días",
+                                "synonyms": [
+                                    "pasado pasado mañana",
+                                    "en tres días"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pasado",
+                                "synonyms": [
+                                    "en dos días",
+                                    "dentro de dos días",
+                                    "pasado mañana"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mañana",
+                                "synonyms": [
+                                    "dentro de un día"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hoy",
+                                "synonyms": [
+                                    "now",
+                                    "ahora"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "ConsultarRadiacionIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ciudadSlot",
+                            "type": "ciudadSlot",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.679450164431.256645880085"
+                            }
+                        },
+                        {
+                            "name": "cuandoSlot",
+                            "type": "cuandoSlot",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.679450164431.848383902762"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.679450164431.256645880085",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿En qué municipio de España?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.679450164431.848383902762",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Hoy, mañana, pasado mañana o dentro de tres días?"
+                    }
+                ]
+            }
+        ]
+    }
+}
